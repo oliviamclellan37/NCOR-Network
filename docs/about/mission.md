@@ -2,6 +2,8 @@
 id: mission
 title: Our Mission
 sidebar_position: 1
+tags:
+  - noindex
 ---
 
 # NCOR Mission
