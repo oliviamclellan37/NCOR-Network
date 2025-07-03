@@ -8,7 +8,7 @@ description: Getting started with the NCOR Network
 
 # Get Started with NCOR
 
-Welcome to the Ontology Research & Development Network! This guide will help you understand what NCOR is, why you might want to join our network, and how to get involved with our various initiatives.
+Welcome to the Ontology Research & Development Network. This guide explains what NCOR is, why you might want to join, and how to get involved in our initiatives.
 
 ## What is NCOR?
 
