@@ -12,7 +12,7 @@ export default function STIDS2025() {
   return (
     <Layout
       title="STIDS 2025 - Semantic Technology for Intelligence, Defense, and Security"
-      description="Join us for STIDS 2025, exploring the latest in semantic technology, intelligence, defense, and security. October 21-23, 2025."
+      description="Join us for STIDS 2025, exploring the latest in semantic technology, intelligence, defense, and security. Unclassified sessions will be held November 17–18, and the classified session on November 19, 2025."
     >
       <STIDS2025Hero />
       <Overview />
