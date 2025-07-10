@@ -39,6 +39,15 @@ const sidebars = {
       type: 'category',
       label: 'Affiliates',
       items: ['affiliates/individuals', 'affiliates/organizations', 'affiliates/institutions'],
+     {
+      type: 'category',
+      label: 'Affiliates',
+      items: ['affiliates/individuals', 'affiliates/organizations', 'affiliates/institutions'],
+    },
+    {
+      type: 'category',
+      label: 'Training',
+      items: ['training/overview', 'training/ncor-pathways'],
     },
     {
       type: 'doc',
