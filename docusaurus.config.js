@@ -1,3 +1,4 @@
+// Trigger rebuild to deploy CEUR template ZIP
 // @ts-check
 // `@type` JSDoc annotations allow editor autocompletion and type checking
 // (when paired with `@ts-check`).
@@ -119,6 +120,10 @@ const config = {
                 label: 'Ontology for AI',
                 to: '/docs/about/ontology-for-ai',
               },
+              {
+                label: 'Success Stories',
+                to: '/docs/about/success-stories',
+              },
             ],
           },
           {
@@ -147,7 +152,7 @@ const config = {
             items: [
               {
                 label: 'Ontology 101',
-                to: '/wiki/ontology-101',
+                to: '/wiki/main-page',
               },
               {
                 label: 'Courses',
@@ -244,8 +249,8 @@ const config = {
                 to: '/docs/get-started',
               },
               {
-                label: 'Tools',
-                to: '/docs/events/useful-links',
+                label: 'Useful Links',
+                to: '/docs/useful-links',
               },
               {
                 label: 'GitHub',
@@ -290,14 +295,7 @@ const config = {
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
-      announcementBar: {
-        id: 'wip_announcement',
-        content: 
-          '🚧 <strong>WORK IN PROGRESS:</strong> The NCOR Network website is currently under development. Some features and content may be incomplete. 🚧',
-        backgroundColor: '#FEF6E4', // Light gold background
-        textColor: '#9e7418',        // Gold text to match your theme
-        isCloseable: false,          // Make it persistent
-      },
+    
     }),
   stylesheets: [
     {

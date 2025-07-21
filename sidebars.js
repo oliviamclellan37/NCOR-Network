@@ -23,32 +23,36 @@ const sidebars = {
     {
       type: 'category',
       label: 'About',
-      items: ['about/mission', 'about/what-is-ontology', 'about/ontology-for-ai'],
+      items: ['about/mission', 'about/what-is-ontology', 'about/ontology-for-ai', 'about/success-stories'],
     },
     {
       type: 'category',
       label: 'Events',
-      items: ['events/office-hours', 'events/working-groups', 'events/meetings-workshops'],
+      items: ['events/office-hours', 'events/meetings-workshops', 'events/ontology-101', 'events/semantic-mapping', 'events/common-core'],
     },
     {
       type: 'category',
       label: 'Research',
       items: ['research/areas', 'research/projects', 'research/publications'],
     },
+{
+  type: 'category',
+  label: 'Affiliates',
+  items: [
+    'affiliates/individuals',
     {
-      type: 'category',
-      label: 'Affiliates',
-      items: ['affiliates/individuals', 'affiliates/organizations', 'affiliates/institutions'],
-     {
-      type: 'category',
-      label: 'Affiliates',
-      items: ['affiliates/individuals', 'affiliates/organizations', 'affiliates/institutions'],
+      type: 'doc',
+      id: 'affiliates/organizations',
+      label: 'Organizational & Institutional Affiliates',
     },
-    {
-      type: 'category',
-      label: 'Training',
-      items: ['training/overview', 'training/ncor-pathways'],
-    },
+  ],
+},
+{
+  type: 'category',
+  label: 'Training',
+  items: ['training/overview', 'training/ncor-pathways'],
+},
+
     {
       type: 'doc',
       id: 'faq',
@@ -56,10 +60,6 @@ const sidebars = {
     {
       type: 'doc',
       id: 'useful-links',
-    },
-    {
-      type: 'doc',
-      id: 'support',
     },
   ],
 }

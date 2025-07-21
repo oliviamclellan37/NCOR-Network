@@ -4,8 +4,8 @@ import styles from './styles.module.css';
 export default function Registration() {
   const pricingOptions = [
     {
-      type: 'Industry',
-      price: 400,
+      type: 'Government',
+      price: 0,
       features: [
         'Full conference access',
         'Conference materials',
@@ -15,8 +15,8 @@ export default function Registration() {
       ]
     },
     {
-      type: 'Government',
-      price: 320,
+      type: 'Industry',
+      price: 480,
       features: [
         'Full conference access',
         'Conference materials',
@@ -27,7 +27,7 @@ export default function Registration() {
     },
     {
       type: 'Academic',
-      price: 280,
+      price: 350,
       features: [
         'Full conference access',
         'Conference materials',
@@ -38,7 +38,7 @@ export default function Registration() {
     },
     {
       type: 'Student',
-      price: 150,
+      price: 215,
       features: [
         'Full conference access',
         'Conference materials',
@@ -89,7 +89,7 @@ export default function Registration() {
                 ))}
               </ul>
               <a 
-                href="#" 
+                href="https://www.eventbrite.com/e/semantic-technology-for-intelligence-defense-and-security-2025-tickets-1479068025279?aff=oddtdtcreator" 
                 className={`${styles.button} ${styles.buttonPrimary}`}
                 style={{ width: '100%' }}
               >
@@ -97,26 +97,6 @@ export default function Registration() {
               </a>
             </div>
           ))}
-        </div>
-
-        <div style={{ 
-          marginTop: '3rem', 
-          textAlign: 'center',
-          padding: '2rem',
-          background: 'var(--ifm-background-surface-color)',
-          borderRadius: '8px'
-        }}>
-          <h3>Classified Session Registration</h3>
-          <p>
-            For registration to the classified session on October 23, 2025, please contact your 
-            organization's security officer or email us directly.
-          </p>
-          <a 
-            href="mailto:classified@stids2025.com" 
-            className={`${styles.button} ${styles.buttonSecondary}`}
-          >
-            Contact for Classified Session
-          </a>
         </div>
       </div>
     </div>
