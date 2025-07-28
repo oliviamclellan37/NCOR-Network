@@ -34,55 +34,31 @@ export default function EventsSection() {
   ];
 
   const pastEvents = [
-    {
-      id: 4,
-      title: 'Applied Ontology Conference 2023',
-      description: 'International conference bringing together researchers from all areas of applied ontology.',
-      date: 'July 18–21, 2023',
-      location: 'Toronto, Canada',
-      url: '/events/applied-ontology-conference-2023'
-    },
-    {
-      id: 5,
-      title: 'BFO Workshop Series',
-      description: 'A series of online workshops introducing Basic Formal Ontology (BFO) and its applications.',
-      date: 'March 5–26, 2023',
-      location: 'Virtual',
-      url: '/events/bfo-workshop-series-2023'
-    },
-    {
-      id: 6,
-      title: 'Interoperability Summit 2023',
-      description: 'A gathering of experts discussing challenges and solutions for semantic interoperability across domains.',
-      date: 'May 9–10, 2023',
-      location: 'Amsterdam, Netherlands',
-      url: '/events/interoperability-summit-2023'
-    },
-    {
-      id: 7,
-      title: 'Enhanced Object Based Production Conference; Part Two',
-      description: 'A follow-up event exploring advances in object-based intelligence production, with experts from government, industry, and academia.',
-      date: 'March 21–22, 2024',
-      location: 'Tampa, FL',
-      url: 'https://ncorwiki.buffalo.edu/index.php/Enhanced_Object-Based_Production_Conference_part_two'
-    },
-    {
-      id: 8,
-      title: 'Buffalo Toronto Ontology Alliance (BoaT) Meeting',
-      description: 'A collaborative event between Buffalo and Toronto researchers exploring ontology applications across disciplines.',
-      date: 'July 14, 2023',
-      location: 'University of Toronto, Canada',
-      url: 'https://urbandatacentre.ca/buffalo-and-toronto-ontology-group-boat'
-    },
-    {
-      id: 9,
-      title: 'Enhanced Object-Based Production Conference',
-      description: 'A cross-sector conference focused on object-based production systems in defense and intelligence.',
-      date: 'June 22–23, 2023',
-      location: 'SAIC Rosslyn, Arlington, VA',
-      url: 'https://ncorwiki.buffalo.edu/index.php/Enhanced_Object-Based_Production_Conference'
-    }
-  ];
+  {
+    id: 5,
+    title: 'Enhanced Object-Based Production Conference; Part Two',
+    description: 'A follow-up event exploring advances in object-based intelligence production, with experts from government, industry, and academia.',
+    date: 'March 21–22, 2024',
+    location: 'Tampa, FL',
+    url: 'https://ncorwiki.buffalo.edu/index.php/Enhanced_Object-Based_Production_Conference_part_two'
+  },
+  {
+    id: 6,
+    title: 'Buffalo Toronto Ontology Alliance (BoaT) Meeting',
+    description: 'A cross-border meeting of the Buffalo and Toronto ontology research communities.',
+    date: 'July 14, 2023',
+    location: 'University of Toronto, Canada',
+    url: 'https://urbandatacentre.ca/buffalo-and-toronto-ontology-group-boat'
+  },
+  {
+    id: 7,
+    title: 'Enhanced Object-Based Production Conference',
+    description: 'A multi-stakeholder meeting focused on object-based intelligence production methods.',
+    date: 'June 22–23, 2023',
+    location: 'SAIC Rosslyn, Arlington, VA',
+    url: 'https://ncorwiki.buffalo.edu/index.php/Enhanced_Object-Based_Production_Conference'
+  }
+];
 
   const displayedEvents = activeTab === 'upcoming' ? upcomingEvents : pastEvents;
 
