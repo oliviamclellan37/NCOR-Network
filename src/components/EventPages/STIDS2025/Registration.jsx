@@ -94,11 +94,20 @@ export default function Registration() {
                 style={{ width: '100%' }}
               >
                 Register Now
-              </a>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-} 
+         <div style={{ marginTop: '2rem', textAlign: 'center' }}>
+  <p><strong>Classified Session Registration:</strong></p>
+  <p>
+    <a
+      href="https://go.intelink.gov/PxGSGtN"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Register with CAC card
+    </a>
+    <br />
+    Non-CAC users:
+    <a href="mailto:Ontology_Registration@nga.mil">
+      Ontology_Registration@nga.mil
+    </a>
+  </p>
+</div>
