@@ -57,24 +57,7 @@ export default function Registration() {
           Select the registration type that best fits your profile
         </p>
 
-        {/* New buttons at the top */}
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
-          <a
-            href="#unclassified-registration"
-            className={`${styles.button} ${styles.buttonPrimary}`}
-          >
-            Unclassified Registration
-          </a>
-          <a
-            href="#classified-registration"
-            className={`${styles.button} ${styles.buttonPrimary}`}
-          >
-            Classified Registration
-          </a>
-        </div>
-
-        {/* Unclassified Registration Section */}
-        <div id="unclassified-registration" className={styles.pricingGrid}>
+        <div className={styles.pricingGrid}>
           {pricingOptions.map((option, index) => (
             <div key={index} className={styles.pricingCard}>
               <div className={styles.pricingType}>{option.type}</div>
@@ -116,8 +99,7 @@ export default function Registration() {
           ))}
         </div>
 
-        {/* Classified Registration Section */}
-        <div id="classified-registration" style={{ marginTop: '4rem', textAlign: 'center' }}>
+        <div style={{ marginTop: '2rem', textAlign: 'center' }}>
           <p><strong>Classified Session Registration:</strong></p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
             <a

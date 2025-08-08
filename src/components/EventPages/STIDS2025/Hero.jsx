@@ -43,12 +43,19 @@ export default function Hero() {
             7500 GEOINT Dr, Springfield VA 22150
           </div>
 
-          <div style={{ marginTop: '2rem' }}>
+          {/* Two registration buttons */}
+          <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
             <a
-              href="#registration"
+              href="#unclassified-registration"
               className={`${styles.button} ${styles.buttonPrimary}`}
             >
-              Register Now
+              Unclassified Registration
+            </a>
+            <a
+              href="#classified-registration"
+              className={`${styles.button} ${styles.buttonPrimary}`}
+            >
+              Classified Registration
             </a>
           </div>
         </div>
