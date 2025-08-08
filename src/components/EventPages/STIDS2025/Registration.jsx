@@ -101,20 +101,22 @@ export default function Registration() {
 
         <div style={{ marginTop: '2rem', textAlign: 'center' }}>
           <p><strong>Classified Session Registration:</strong></p>
-          <p>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
             <a
               href="https://go.intelink.gov/PxGSGtN"
               target="_blank"
               rel="noopener noreferrer"
+              className={`${styles.button} ${styles.buttonPrimary}`}
             >
               Register with CAC card
             </a>
-            <br />
-            Non-CAC users:{" "}
-            <a href="mailto:Ontology_Registration@nga.mil">
-              Ontology_Registration@nga.mil
+            <a
+              href="mailto:Ontology_Registration@nga.mil"
+              className={`${styles.button} ${styles.buttonPrimary}`}
+            >
+              Email for Non-CAC Registration
             </a>
-          </p>
+          </div>
         </div>
       </div>
     </div>
