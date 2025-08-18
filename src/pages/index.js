@@ -4,6 +4,8 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import Head from '@docusaurus/Head';
+
 
 // Import the new component
 import AboutSection from '@site/src/components/AboutSection';
@@ -252,12 +254,26 @@ function HomepageHeader() {
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="NCOR - A global hub fostering National Centers for Ontological Research across diverse cultures"
-      className="homepage">
-      <HomepageHeader />
-      
+<Layout
+  title={`${siteConfig.title}`}
+  description="NCOR - A global hub fostering National Centers for Ontological Research across diverse cultures"
+  className="homepage">
+
+  {/* ✅ SEO meta tags */}
+  <Head>
+    <title>NCOR Network | Ontology Research, Collaboration & Best Practices</title>
+    <meta
+      name="description"
+      content="The NCOR Network is an international non-profit fostering ontology research, education, and interoperability for robust AI and data systems."
+    />
+    <meta
+      name="keywords"
+      content="ontology, NCOR, research, workshops, AI, education"
+    />
+  </Head>
+
+  <HomepageHeader />
+
       {/* About Section */}
       <section style={{ 
         background: '#fff',
