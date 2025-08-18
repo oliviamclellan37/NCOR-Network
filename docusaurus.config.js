@@ -26,6 +26,15 @@ const config = {
   organizationName: 'NCOR-Organization', // Updated from CommonCoreOntology
   projectName: 'NCOR-Network', // Updated from commoncoreontology.github.io
   trailingSlash: false,
+  // --- Global SEO defaults ---
+  metadata: [
+    {
+      name: 'description',
+      content:
+        'NCOR is an international non-profit fostering ontology research, education, and interoperability for robust AI and data systems.',
+    },
+    { property: 'og:site_name', content: 'NCOR Network' },
+  ],
 
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
@@ -73,7 +82,18 @@ const config = {
         exclude: ['resources/**'],
       },
     ],
+
+    // --- Sitemap plugin for Google ---
+    [
+      '@docusaurus/plugin-sitemap',
+      {
+        changefreq: 'weekly',
+        priority: 0.7,
+        filename: 'sitemap.xml',
+      },
+    ],
   ],
+
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
