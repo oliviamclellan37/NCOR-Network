@@ -5,7 +5,6 @@ import Head from '@docusaurus/Head';
 import STIDS2025Hero from '@site/src/components/EventPages/STIDS2025/Hero';
 import Overview from '@site/src/components/EventPages/STIDS2025/Overview';
 import CallForPapers from '@site/src/components/EventPages/STIDS2025/CallForPapers';
-import Speakers from '@site/src/components/EventPages/STIDS2025/Speakers';
 import ImportantDates from '@site/src/components/EventPages/STIDS2025/ImportantDates';
 import Registration from '@site/src/components/EventPages/STIDS2025/Registration';
 import ContactForm from '@site/src/components/EventPages/STIDS2025/ContactForm';
@@ -41,19 +40,11 @@ function JsonLdEvent() {
     location: {
       '@type': 'Place',
       name: 'George Mason University',
-      address: {
-        '@type': 'PostalAddress',
-        addressRegion: 'VA',
-        addressCountry: 'US',
-      },
+      address: { '@type': 'PostalAddress', addressRegion: 'VA', addressCountry: 'US' },
     },
     image: [`https://ncor-network.org${SEO.image}`],
     description: SEO.description,
-    organizer: {
-      '@type': 'Organization',
-      name: 'NCOR Network',
-      url: 'https://ncor-network.org',
-    },
+    organizer: { '@type': 'Organization', name: 'NCOR Network', url: 'https://ncor-network.org' },
   };
   return <script type="application/ld+json">{JSON.stringify(json)}</script>;
 }
@@ -64,33 +55,26 @@ export default function STIDS2025() {
       <Head>
         {/* Canonical */}
         <link rel="canonical" href={SEO.url} />
-
-        {/* Basic SEO */}
-        <title>{SEO.title}</title>
-        <meta name="description" content={SEO.description} />
+        {/* Keywords (optional) */}
         <meta name="keywords" content={SEO.keywords.join(', ')} />
-
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content={SEO.title} />
         <meta property="og:description" content={SEO.description} />
         <meta property="og:url" content={SEO.url} />
         <meta property="og:image" content={`https://ncor-network.org${SEO.image}`} />
-
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={SEO.title} />
         <meta name="twitter:description" content={SEO.description} />
         <meta name="twitter:image" content={`https://ncor-network.org${SEO.image}`} />
-
-        {/* Schema.org JSON-LD */}
+        {/* JSON-LD */}
         <JsonLdEvent />
       </Head>
 
       <STIDS2025Hero />
       <Overview />
       <CallForPapers />
-      <Speakers />
       <ImportantDates />
       <Registration />
       <ContactForm />
