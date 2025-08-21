@@ -1,7 +1,5 @@
-// src/pages/events/stids2025.js
 import React from 'react';
 import Layout from '@theme/Layout';
-import Head from '@docusaurus/Head';
 import STIDS2025Hero from '@site/src/components/EventPages/STIDS2025/Hero';
 import Overview from '@site/src/components/EventPages/STIDS2025/Overview';
 import CallForPapers from '@site/src/components/EventPages/STIDS2025/CallForPapers';
@@ -80,4 +78,4 @@ export default function STIDS2025() {
       <ContactForm />
     </Layout>
   );
-}
+} 
